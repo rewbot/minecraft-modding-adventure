@@ -15,6 +15,6 @@ public class AdventureBlock extends Block {
         this.setUnlocalizedName(unlocalizedName);
         this.setHardness(hardness);
         this.setResistance(resistance);
-        setCreativeTab(CreativeTabs.tabBlock);
+        setCreativeTab(CreativeTabs.tabMisc);
     }
 }
