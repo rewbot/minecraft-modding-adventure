@@ -12,6 +12,6 @@ public class AdventureBlocks {
 
     public static void initBlocks() {
         //Ores
-        GameRegistry.registerBlock(new AdventureBlock("copperOre", Material.rock, 3, 15), "copperOre");
+        GameRegistry.registerBlock(copperOre = new AdventureBlock("copperOre", Material.rock, 3, 15), "copperOre");
     }
 }
