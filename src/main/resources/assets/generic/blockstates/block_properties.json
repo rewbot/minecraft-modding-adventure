@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "type=white": { "model":"generic:block_properties_white" },
-    "type=black": { "model":"generic:block_properties_black" }
-  }
-}
