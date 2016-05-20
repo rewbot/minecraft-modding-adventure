@@ -10,7 +10,14 @@ public class AdventureItems {
     //Ingots
     public static Item copperIngot;
 
+    //Gems
+    public static Item topazStone;
+
     public static void initItems() {
+        //Ingots
         GameRegistry.registerItem(copperIngot = new AdventureItem("copperIngot"), "copperIngot");
+
+        //Gems
+        GameRegistry.registerItem(topazStone = new AdventureItem("topazStone"), "topazStone");
     }
 }

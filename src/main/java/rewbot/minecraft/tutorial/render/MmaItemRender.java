@@ -15,6 +15,9 @@ public class MmaItemRender {
     public static void registerItemRender() {
         //Ingots
         registerItem(AdventureItems.copperIngot);
+
+        //Gems
+        registerItem(AdventureItems.topazStone);
     }
 
     private static void registerItem(Item item) {
