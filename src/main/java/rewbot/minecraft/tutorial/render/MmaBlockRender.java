@@ -14,7 +14,11 @@ import rewbot.minecraft.tutorial.blocks.AdventureBlocks;
 public class MmaBlockRender {
 
     public static void registerBlockRender() {
+        //Ores
         registerBlock(AdventureBlocks.copperOre);
+
+        //Gems
+        registerBlock(AdventureBlocks.topazOre);
     }
 
     private static void registerBlock(Block block) {
