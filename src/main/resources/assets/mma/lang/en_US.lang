@@ -1,3 +1,5 @@
 tile.copperOre.name=Copper Ore
 
 item.copperIngot.name=Copper Ingot
+
+itemGroup.mmaCreativeTab=Adventure Items
