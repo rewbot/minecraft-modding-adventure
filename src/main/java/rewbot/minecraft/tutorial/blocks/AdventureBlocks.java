@@ -11,12 +11,18 @@ public class AdventureBlocks {
     //Ores
     public static Block copperOre;
 
+    //Blocks
+    public static Block copperBlock;
+
     //Gems
     public static Block topazOre;
 
     public static void initBlocks() {
         //Ores
         GameRegistry.registerBlock(copperOre = new AdventureBlock("copperOre", Material.rock, 3, 15), "copperOre");
+
+        //Blocks
+        GameRegistry.registerBlock(copperBlock = new AdventureBlock("copperBlock", Material.rock, 3, 15), "copperBlock");
 
         //Gems
         GameRegistry.registerBlock(topazOre = new AdventureBlock("topazOre", Material.rock, 3, 15), "topazOre");

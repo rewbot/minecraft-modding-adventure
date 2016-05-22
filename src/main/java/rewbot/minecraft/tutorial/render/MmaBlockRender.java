@@ -17,6 +17,9 @@ public class MmaBlockRender {
         //Ores
         registerBlock(AdventureBlocks.copperOre);
 
+        //Blocks
+        registerBlock(AdventureBlocks.copperBlock);
+
         //Gems
         registerBlock(AdventureBlocks.topazOre);
     }
