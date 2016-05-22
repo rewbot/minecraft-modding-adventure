@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import rewbot.minecraft.tutorial.blocks.AdventureBlocks;
 import rewbot.minecraft.tutorial.crafting.MmaRecipes;
+import rewbot.minecraft.tutorial.crafting.MmaSmelting;
 import rewbot.minecraft.tutorial.items.AdventureItems;
 
 /**
@@ -16,6 +17,7 @@ public class CommonProxy {
         AdventureBlocks.initBlocks();
         AdventureItems.initItems();
         MmaRecipes.initRecipes();
+        MmaSmelting.initSmelting();
     }
 
     public void init(FMLInitializationEvent event) {
