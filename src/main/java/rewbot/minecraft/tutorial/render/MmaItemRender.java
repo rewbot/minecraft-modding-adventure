@@ -13,6 +13,13 @@ import rewbot.minecraft.tutorial.items.AdventureItems;
 public class MmaItemRender {
 
     public static void registerItemRender() {
+        //Tools
+        registerItem(AdventureItems.vanadiumPickaxe);
+        registerItem(AdventureItems.vanadiumAxe);
+        registerItem(AdventureItems.vanadiumSpade);
+        registerItem(AdventureItems.vanadiumHoe);
+        registerItem(AdventureItems.vanadiumSword);
+
         //Ingots
         registerItem(AdventureItems.copperIngot);
 
