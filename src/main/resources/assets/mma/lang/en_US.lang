@@ -9,5 +9,9 @@ item.vanadiumAxe.name=Vanadium Axe
 item.vanadiumSpade.name=Vanadium Shovel
 item.vanadiumHoe.name=Vanadium Hoe
 item.vanadiumSword.name=Vanadium Sword
+item.vanadiumHelmet.name=Vanadium Helmet
+item.vanadiumChestplate.name=Vanadium Chestplate
+item.vanadiumLeggings.name=Vanadium Leggings
+item.vanadiumBoots.name=Vanadium Boots
 
 itemGroup.mmaCreativeTab=Adventure Items

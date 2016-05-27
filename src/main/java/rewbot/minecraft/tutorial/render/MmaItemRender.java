@@ -20,6 +20,12 @@ public class MmaItemRender {
         registerItem(AdventureItems.vanadiumHoe);
         registerItem(AdventureItems.vanadiumSword);
 
+        //Armor
+        registerItem(AdventureItems.vanadiumHelmet);
+        registerItem(AdventureItems.vanadiumChestplate);
+        registerItem(AdventureItems.vanadiumLeggings);
+        registerItem(AdventureItems.vanadiumBoots);
+
         //Ingots
         registerItem(AdventureItems.copperIngot);
 
@@ -28,7 +34,7 @@ public class MmaItemRender {
     }
 
     private static void registerItem(Item item) {
-        ItemModelMesher itemModelMesher =  Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
+        ItemModelMesher itemModelMesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
         itemModelMesher.register(item, 0, new ModelResourceLocation(Main.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
     }
 

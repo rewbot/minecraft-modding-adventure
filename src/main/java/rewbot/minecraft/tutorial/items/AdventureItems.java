@@ -1,8 +1,11 @@
 package rewbot.minecraft.tutorial.items;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import rewbot.minecraft.tutorial.Main;
+import rewbot.minecraft.tutorial.items.armor.*;
 import rewbot.minecraft.tutorial.items.tools.*;
 
 /**
@@ -19,6 +22,14 @@ public class AdventureItems {
     public static Item vanadiumHoe;
     public static Item vanadiumSword;
 
+    //Armor
+    public static ItemArmor.ArmorMaterial VANADIUMARMOR = EnumHelper.addArmorMaterial("VANADIUMARMOR", Main.MOD_ID + ":" + "vanadium", 16, new int[]{2, 5, 3, 1, }, 30);
+
+    public static Item vanadiumHelmet;
+    public static Item vanadiumChestplate;
+    public static Item vanadiumLeggings;
+    public static Item vanadiumBoots;
+
     //Ingots
     public static Item copperIngot;
 
@@ -32,6 +43,13 @@ public class AdventureItems {
         GameRegistry.registerItem(vanadiumSpade = new MmaVanadiumSpade("vanadiumSpade", VANADIUMTOOLS), "vanadiumSpade");
         GameRegistry.registerItem(vanadiumHoe = new MmaVanadiumHoe("vanadiumHoe", VANADIUMTOOLS), "vanadiumHoe");
         GameRegistry.registerItem(vanadiumSword = new MmaVanadiumSword("vanadiumSword", VANADIUMTOOLS), "vanadiumSword");
+
+        //Armor
+        GameRegistry.registerItem(vanadiumHelmet = new MmaVanadiumArmor("vanadiumHelmet", VANADIUMARMOR, 1, 0), "vanadiumHelmet");
+        GameRegistry.registerItem(vanadiumChestplate = new MmaVanadiumArmor("vanadiumChestplate", VANADIUMARMOR, 1, 1), "vanadiumChestplate");
+        GameRegistry.registerItem(vanadiumLeggings = new MmaVanadiumArmor("vanadiumLeggings", VANADIUMARMOR, 2, 2), "vanadiumLeggings");
+        GameRegistry.registerItem(vanadiumBoots = new MmaVanadiumArmor("vanadiumBoots", VANADIUMARMOR, 1, 3), "vanadiumBoots");
+
 
         //Ingots
         GameRegistry.registerItem(copperIngot = new AdventureItem("copperIngot"), "copperIngot");
