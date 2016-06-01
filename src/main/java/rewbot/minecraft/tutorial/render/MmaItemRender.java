@@ -19,6 +19,8 @@ public class MmaItemRender {
         registerItem(AdventureItems.vanadiumSpade);
         registerItem(AdventureItems.vanadiumHoe);
         registerItem(AdventureItems.vanadiumSword);
+        registerItem(AdventureItems.shaleMattock);
+        registerItem(AdventureItems.resinHarvester);
 
         //Armor
         registerItem(AdventureItems.vanadiumHelmet);
@@ -31,6 +33,10 @@ public class MmaItemRender {
 
         //Gems
         registerItem(AdventureItems.topazStone);
+
+        //Fuels
+        registerItem(AdventureItems.treeResin);
+        registerItem(AdventureItems.viscinousGel);
     }
 
     private static void registerItem(Item item) {
