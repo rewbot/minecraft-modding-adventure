@@ -46,10 +46,10 @@ public class MmaVanadiumArmor extends ItemArmor {
     }
 
     private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots) {
-        return (player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(3).getItem() == helmet)
-                && (player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(2).getItem() == chestplate)
-                && (player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(1).getItem() == leggings)
-                && (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(0).getItem() == boots);
+        return (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(3).getItem() == helmet)
+                && (player.inventory.armorItemInSlot(2) != null && player.inventory.armorItemInSlot(2).getItem() == chestplate)
+                && (player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(1).getItem() == leggings)
+                && (player.inventory.armorItemInSlot(0) != null && player.inventory.armorItemInSlot(0).getItem() == boots);
     }
 
     private void effectPlayer(EntityPlayer player, Potion potion, int amplifier) {
