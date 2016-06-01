@@ -30,28 +30,23 @@ public class MmaDropHandler {
 
     @SubscribeEvent
     public void addBlockDrop(BlockEvent.HarvestDropsEvent event) {
-        ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
-
         if (event.state.getBlock() == Blocks.gravel) {
-
             Random rand = new Random();
-            //ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
+            ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
             if(holding != null && holding.getItem() instanceof MmaShaleMattock) {
                 event.drops.clear();
                 event.drops.add(new ItemStack(AdventureItems.viscinousGel, rand.nextInt(4)));
             }
-
         }
 
         if (event.state.getBlock() == Blocks.log) {
             if (event.state.getValue(BlockOldLog.VARIANT) == BlockPlanks.EnumType.SPRUCE) {
-                //ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
+                ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
                 if(holding != null && holding.getItem() instanceof MmaResinHarvester) {
                     event.drops.clear();
                     event.drops.add(new ItemStack(AdventureItems.treeResin, 2));
                 }
             }
-
         }
     }
 }
