@@ -1,6 +1,5 @@
 package rewbot.minecraft.tutorial.items;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import rewbot.minecraft.tutorial.MmaGlobal;
 
@@ -12,7 +11,7 @@ public class AdventureItem extends Item {
     public AdventureItem(String name) {
         super();
 
-        this.setUnlocalizedName(name);
-        this.setCreativeTab(MmaGlobal.mmaCreativeTab);
+        setUnlocalizedName(name);
+        setCreativeTab(MmaGlobal.mmaCreativeTab);
     }
 }

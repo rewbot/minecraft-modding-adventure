@@ -37,7 +37,6 @@ public class Main {
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent postEvent) {
-
         this.proxy.postInit(postEvent);
     }
 }

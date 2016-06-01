@@ -40,6 +40,9 @@ public class MmaVanadiumArmor extends ItemArmor {
         if (isWearingFullSet(player, AdventureItems.vanadiumHelmet, AdventureItems.vanadiumChestplate, AdventureItems.vanadiumLeggings, AdventureItems.vanadiumBoots)) {
             effectPlayer(player, Potion.regeneration, 1);
         }
+
+        //TODO: How can I add the custom items directly to survival inventory?
+        //player.inventory.addItemStackToInventory(new ItemStack(AdventureItems.copperIngot));
     }
 
     private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots) {
