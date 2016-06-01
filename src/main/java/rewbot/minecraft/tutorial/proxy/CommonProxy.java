@@ -9,6 +9,7 @@ import rewbot.minecraft.tutorial.blocks.AdventureBlocks;
 import rewbot.minecraft.tutorial.crafting.MmaRecipes;
 import rewbot.minecraft.tutorial.crafting.MmaSmelting;
 import rewbot.minecraft.tutorial.handler.MmaDropHandler;
+import rewbot.minecraft.tutorial.handler.MmaFuelHandler;
 import rewbot.minecraft.tutorial.items.AdventureItems;
 
 /**
@@ -25,7 +26,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new MmaDropHandler());
-
+        GameRegistry.registerFuelHandler(new MmaFuelHandler());
     }
 
     public void postInit(FMLPostInitializationEvent postEvent) {
