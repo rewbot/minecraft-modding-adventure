@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import rewbot.minecraft.tutorial.Main;
-import rewbot.minecraft.tutorial.blocks.AdventureBlocks;
+import rewbot.minecraft.tutorial.blocks.MmaBlocks;
 
 /**
  * Created by ashepherd on 5/16/2016.
@@ -15,13 +15,13 @@ public class MmaBlockRender {
 
     public static void registerBlockRender() {
         //Ores
-        registerBlock(AdventureBlocks.copperOre);
+        registerBlock(MmaBlocks.copperOre);
 
         //Blocks
-        registerBlock(AdventureBlocks.copperBlock);
+        registerBlock(MmaBlocks.copperBlock);
 
         //Gems
-        registerBlock(AdventureBlocks.topazOre);
+        registerBlock(MmaBlocks.topazOre);
     }
 
     private static void registerBlock(Block block) {

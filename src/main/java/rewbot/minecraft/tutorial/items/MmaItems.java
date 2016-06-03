@@ -13,7 +13,7 @@ import rewbot.minecraft.tutorial.items.tools.*;
 /**
  * Created by ashepherd on 5/17/2016.
  */
-public class AdventureItems {
+public class MmaItems {
     //Tools
     //See ToolMaterial Enum for more info
     public static Item.ToolMaterial VANADIUMTOOLS = EnumHelper.addToolMaterial("VANADIUMTOOLS", 3, 800, 8.0F, 4.0F, 10); //Maybe modify to Laconian tools?
@@ -67,10 +67,10 @@ public class AdventureItems {
 
 
         //Ingots
-        GameRegistry.registerItem(copperIngot = new AdventureItem("copperIngot"), "copperIngot");
+        GameRegistry.registerItem(copperIngot = new MmaItem("copperIngot"), "copperIngot");
 
         //Gems
-        GameRegistry.registerItem(topazStone = new AdventureItem("topazStone"), "topazStone");
+        GameRegistry.registerItem(topazStone = new MmaItem("topazStone"), "topazStone");
 
         //Fuels
         GameRegistry.registerItem(treeResin = new MmaTreeResing("treeResin"), "treeResin");

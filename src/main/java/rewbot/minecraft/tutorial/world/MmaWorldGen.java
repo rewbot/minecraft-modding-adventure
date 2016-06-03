@@ -5,7 +5,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import rewbot.minecraft.tutorial.blocks.AdventureBlocks;
+import rewbot.minecraft.tutorial.blocks.MmaBlocks;
 
 import java.util.Random;
 
@@ -20,8 +20,8 @@ public class MmaWorldGen implements IWorldGenerator {
     private WorldGenerator topazOre;
 
     public MmaWorldGen() {
-        copperOre = new MmaWorldGenMinable(AdventureBlocks.copperOre.getDefaultState(), 8);
-        topazOre = new MmaWorldGenMinable(AdventureBlocks.topazOre.getDefaultState(), 8);
+        copperOre = new MmaWorldGenMinable(MmaBlocks.copperOre.getDefaultState(), 8);
+        topazOre = new MmaWorldGenMinable(MmaBlocks.topazOre.getDefaultState(), 8);
     }
 
     @Override

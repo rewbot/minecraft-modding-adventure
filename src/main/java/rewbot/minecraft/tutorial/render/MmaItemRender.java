@@ -5,7 +5,7 @@ import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import rewbot.minecraft.tutorial.Main;
-import rewbot.minecraft.tutorial.items.AdventureItems;
+import rewbot.minecraft.tutorial.items.MmaItems;
 
 /**
  * Created by ashepherd on 5/17/2016.
@@ -14,29 +14,29 @@ public class MmaItemRender {
 
     public static void registerItemRender() {
         //Tools
-        registerItem(AdventureItems.vanadiumPickaxe);
-        registerItem(AdventureItems.vanadiumAxe);
-        registerItem(AdventureItems.vanadiumSpade);
-        registerItem(AdventureItems.vanadiumHoe);
-        registerItem(AdventureItems.vanadiumSword);
-        registerItem(AdventureItems.shaleMattock);
-        registerItem(AdventureItems.resinHarvester);
+        registerItem(MmaItems.vanadiumPickaxe);
+        registerItem(MmaItems.vanadiumAxe);
+        registerItem(MmaItems.vanadiumSpade);
+        registerItem(MmaItems.vanadiumHoe);
+        registerItem(MmaItems.vanadiumSword);
+        registerItem(MmaItems.shaleMattock);
+        registerItem(MmaItems.resinHarvester);
 
         //Armor
-        registerItem(AdventureItems.vanadiumHelmet);
-        registerItem(AdventureItems.vanadiumChestplate);
-        registerItem(AdventureItems.vanadiumLeggings);
-        registerItem(AdventureItems.vanadiumBoots);
+        registerItem(MmaItems.vanadiumHelmet);
+        registerItem(MmaItems.vanadiumChestplate);
+        registerItem(MmaItems.vanadiumLeggings);
+        registerItem(MmaItems.vanadiumBoots);
 
         //Ingots
-        registerItem(AdventureItems.copperIngot);
+        registerItem(MmaItems.copperIngot);
 
         //Gems
-        registerItem(AdventureItems.topazStone);
+        registerItem(MmaItems.topazStone);
 
         //Fuels
-        registerItem(AdventureItems.treeResin);
-        registerItem(AdventureItems.viscinousGel);
+        registerItem(MmaItems.treeResin);
+        registerItem(MmaItems.viscinousGel);
     }
 
     private static void registerItem(Item item) {

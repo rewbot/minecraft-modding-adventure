@@ -2,7 +2,7 @@ package rewbot.minecraft.tutorial;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import rewbot.minecraft.tutorial.items.AdventureItems;
+import rewbot.minecraft.tutorial.items.MmaItems;
 
 /**
  * Created by ashepherd on 5/19/2016.
@@ -15,6 +15,6 @@ public class MmaCreativeTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return AdventureItems.copperIngot;
+        return MmaItems.copperIngot;
     }
 }

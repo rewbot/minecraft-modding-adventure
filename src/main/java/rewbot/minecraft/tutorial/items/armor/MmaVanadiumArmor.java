@@ -8,7 +8,7 @@ import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 import rewbot.minecraft.tutorial.MmaGlobal;
-import rewbot.minecraft.tutorial.items.AdventureItems;
+import rewbot.minecraft.tutorial.items.MmaItems;
 
 /**
  * Created by ashepherd on 5/26/2016.
@@ -24,25 +24,25 @@ public class MmaVanadiumArmor extends ItemArmor {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        if (itemStack.getItem() == AdventureItems.vanadiumHelmet) {
+        if (itemStack.getItem() == MmaItems.vanadiumHelmet) {
             effectPlayer(player, Potion.nightVision, 0);
         }
-        if (itemStack.getItem() == AdventureItems.vanadiumChestplate) {
+        if (itemStack.getItem() == MmaItems.vanadiumChestplate) {
             effectPlayer(player, Potion.absorption, 1);
         }
-        if (itemStack.getItem() == AdventureItems.vanadiumLeggings) {
+        if (itemStack.getItem() == MmaItems.vanadiumLeggings) {
             effectPlayer(player, Potion.moveSpeed, 1);
         }
-        if (itemStack.getItem() == AdventureItems.vanadiumBoots) {
+        if (itemStack.getItem() == MmaItems.vanadiumBoots) {
             effectPlayer(player, Potion.jump, 2);
         }
 
-        if (isWearingFullSet(player, AdventureItems.vanadiumHelmet, AdventureItems.vanadiumChestplate, AdventureItems.vanadiumLeggings, AdventureItems.vanadiumBoots)) {
+        if (isWearingFullSet(player, MmaItems.vanadiumHelmet, MmaItems.vanadiumChestplate, MmaItems.vanadiumLeggings, MmaItems.vanadiumBoots)) {
             effectPlayer(player, Potion.regeneration, 1);
         }
 
         //TODO: How can I add the custom items directly to survival inventory?
-        //player.inventory.addItemStackToInventory(new ItemStack(AdventureItems.copperIngot));
+        //player.inventory.addItemStackToInventory(new ItemStack(MmaItems.copperIngot));
     }
 
     private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots) {

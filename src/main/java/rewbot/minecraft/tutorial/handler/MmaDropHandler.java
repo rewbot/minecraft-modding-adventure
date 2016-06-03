@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import rewbot.minecraft.tutorial.items.AdventureItems;
+import rewbot.minecraft.tutorial.items.MmaItems;
 import rewbot.minecraft.tutorial.items.tools.MmaResinHarvester;
 import rewbot.minecraft.tutorial.items.tools.MmaShaleMattock;
 
@@ -23,7 +23,7 @@ public class MmaDropHandler {
     @SubscribeEvent
     public void addEntityDrop(LivingDropsEvent event) {
         if (event.entity instanceof EntityChicken) {
-            ItemStack copperIngot = new ItemStack(AdventureItems.copperIngot, 1);
+            ItemStack copperIngot = new ItemStack(MmaItems.copperIngot, 1);
             event.drops.add(new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, copperIngot));
         }
     }
@@ -35,7 +35,7 @@ public class MmaDropHandler {
             ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
             if(holding != null && holding.getItem() instanceof MmaShaleMattock) {
                 event.drops.clear();
-                event.drops.add(new ItemStack(AdventureItems.viscinousGel, rand.nextInt(4)));
+                event.drops.add(new ItemStack(MmaItems.viscinousGel, rand.nextInt(4)));
             }
         }
 
@@ -44,7 +44,7 @@ public class MmaDropHandler {
                 ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
                 if(holding != null && holding.getItem() instanceof MmaResinHarvester) {
                     event.drops.clear();
-                    event.drops.add(new ItemStack(AdventureItems.treeResin, 2));
+                    event.drops.add(new ItemStack(MmaItems.treeResin, 2));
                 }
             }
         }

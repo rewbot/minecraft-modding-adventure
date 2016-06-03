@@ -6,9 +6,9 @@ import rewbot.minecraft.tutorial.MmaGlobal;
 /**
  * Created by ashepherd on 5/17/2016.
  */
-public class AdventureItem extends Item {
+public class MmaItem extends Item {
 
-    public AdventureItem(String name) {
+    public MmaItem(String name) {
         super();
 
         setUnlocalizedName(name);
