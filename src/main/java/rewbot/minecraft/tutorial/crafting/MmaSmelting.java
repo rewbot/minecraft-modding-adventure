@@ -12,5 +12,6 @@ public class MmaSmelting {
 
     public static void initSmelting() {
         GameRegistry.addSmelting(MmaBlocks.copperOre, new ItemStack(MmaItems.copperIngot), 0);
+        GameRegistry.addSmelting(MmaBlocks.laconianOre, new ItemStack(MmaItems.laconianIngot), 5);
     }
 }
