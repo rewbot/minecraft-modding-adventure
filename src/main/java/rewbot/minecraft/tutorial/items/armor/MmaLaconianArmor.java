@@ -13,9 +13,9 @@ import rewbot.minecraft.tutorial.items.MmaItems;
 /**
  * Created by ashepherd on 5/26/2016.
  */
-public class MmaVanadiumArmor extends ItemArmor {
+public class MmaLaconianArmor extends ItemArmor {
 
-    public MmaVanadiumArmor(String unlocalizedName, ArmorMaterial material, int renderIndex, int armorType) {
+    public MmaLaconianArmor(String unlocalizedName, ArmorMaterial material, int renderIndex, int armorType) {
         super(material, renderIndex, armorType);
 
         setUnlocalizedName(unlocalizedName);
@@ -24,20 +24,20 @@ public class MmaVanadiumArmor extends ItemArmor {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        if (itemStack.getItem() == MmaItems.vanadiumHelmet) {
+        if (itemStack.getItem() == MmaItems.laconianHelmet) {
             effectPlayer(player, Potion.nightVision, 0);
         }
-        if (itemStack.getItem() == MmaItems.vanadiumChestplate) {
+        if (itemStack.getItem() == MmaItems.laconianChestplate) {
             effectPlayer(player, Potion.absorption, 1);
         }
-        if (itemStack.getItem() == MmaItems.vanadiumLeggings) {
+        if (itemStack.getItem() == MmaItems.laconianLeggings) {
             effectPlayer(player, Potion.moveSpeed, 1);
         }
-        if (itemStack.getItem() == MmaItems.vanadiumBoots) {
+        if (itemStack.getItem() == MmaItems.laconianBoots) {
             effectPlayer(player, Potion.jump, 2);
         }
 
-        if (isWearingFullSet(player, MmaItems.vanadiumHelmet, MmaItems.vanadiumChestplate, MmaItems.vanadiumLeggings, MmaItems.vanadiumBoots)) {
+        if (isWearingFullSet(player, MmaItems.laconianHelmet, MmaItems.laconianChestplate, MmaItems.laconianLeggings, MmaItems.laconianBoots)) {
             effectPlayer(player, Potion.regeneration, 1);
         }
 

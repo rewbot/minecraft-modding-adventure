@@ -1,7 +1,7 @@
 {
   "parent": "builtin/generated",
   "textures": {
-    "layer0": "mma:items/vanadiumSpade"
+    "layer0": "mma:items/laconianPickaxe"
   },
   "display": {
     "thirdperson": {

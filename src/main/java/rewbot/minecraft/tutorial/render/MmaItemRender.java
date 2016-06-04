@@ -14,19 +14,19 @@ public class MmaItemRender {
 
     public static void registerItemRender() {
         //Tools
-        registerItem(MmaItems.vanadiumPickaxe);
-        registerItem(MmaItems.vanadiumAxe);
-        registerItem(MmaItems.vanadiumSpade);
-        registerItem(MmaItems.vanadiumHoe);
-        registerItem(MmaItems.vanadiumSword);
+        registerItem(MmaItems.laconianPickaxe);
+        registerItem(MmaItems.laconianAxe);
+        registerItem(MmaItems.laconianSpade);
+        registerItem(MmaItems.laconianHoe);
+        registerItem(MmaItems.laconianSword);
         registerItem(MmaItems.shaleMattock);
         registerItem(MmaItems.resinHarvester);
 
         //Armor
-        registerItem(MmaItems.vanadiumHelmet);
-        registerItem(MmaItems.vanadiumChestplate);
-        registerItem(MmaItems.vanadiumLeggings);
-        registerItem(MmaItems.vanadiumBoots);
+        registerItem(MmaItems.laconianHelmet);
+        registerItem(MmaItems.laconianChestplate);
+        registerItem(MmaItems.laconianLeggings);
+        registerItem(MmaItems.laconianBoots);
 
         //Ingots
         registerItem(MmaItems.copperIngot);
