@@ -34,11 +34,79 @@ public class MmaRecipes {
         //Shaped
         //Sword
         GameRegistry.addRecipe(new ItemStack(MmaItems.laconianSword),
-                " L ",
-                " L ",
-                " W ",
-                'L', MmaItems.laconianIngot,
-                'W', Items.stick
+                " * ",
+                " * ",
+                " # ",
+                '*', MmaItems.laconianIngot,
+                '#', Items.stick
+        );
+
+        //Pickaxe
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianPickaxe),
+                "***",
+                " # ",
+                " # ",
+                '*', MmaItems.laconianIngot,
+                '#', Items.stick
+        );
+
+        //Axe
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianAxe),
+                "** ",
+                "*# ",
+                " # ",
+                '*', MmaItems.laconianIngot,
+                '#', Items.stick
+        );
+
+        //Hoe
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHoe),
+                "** ",
+                " # ",
+                " # ",
+                '*', MmaItems.laconianIngot,
+                '#', Items.stick
+        );
+
+        //Spade
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianSpade),
+                " * ",
+                " # ",
+                " # ",
+                '*', MmaItems.laconianIngot,
+                '#', Items.stick
+        );
+
+        //Helmet
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHelmet),
+                "###",
+                "# #",
+                "   ",
+                '#', MmaItems.laconianIngot
+        );
+
+        //Chestplate
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianChestplate),
+                "# #",
+                "###",
+                "###",
+                '#', MmaItems.laconianIngot
+        );
+
+        //Leggings
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianLeggings),
+                "###",
+                "# #",
+                "# #",
+                '#', MmaItems.laconianIngot
+        );
+
+        //Boots
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianBoots),
+                "   ",
+                "# #",
+                "# #",
+                '#', MmaItems.laconianIngot
         );
 
         //Shapeless
