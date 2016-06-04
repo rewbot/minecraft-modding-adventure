@@ -1,6 +1,7 @@
 tile.copperOre.name=Copper Ore
 tile.topazOre.name=Topaz Ore
 tile.copperBlock.name=Copper Block
+tile.laconianOre.name=Laconian Ore
 
 item.copperIngot.name=Copper Ingot
 item.topazStone.name=Topaz Stone

@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MmaBlocks {
     //Ores
     public static Block copperOre;
+    public static Block laconianOre;
 
     //Blocks
     public static Block copperBlock;
@@ -20,6 +21,7 @@ public class MmaBlocks {
     public static void initBlocks() {
         //Ores
         GameRegistry.registerBlock(copperOre = new MmaBlock("copperOre", Material.rock, 3, 15), "copperOre");
+        GameRegistry.registerBlock(laconianOre = new MmaLaconianOre("laconianOre", Material.rock, 3, 15), "laconianOre");
 
         //Blocks
         GameRegistry.registerBlock(copperBlock = new MmaBlock("copperBlock", Material.rock, 3, 15), "copperBlock");

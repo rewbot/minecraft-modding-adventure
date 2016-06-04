@@ -16,6 +16,7 @@ public class MmaBlockRender {
     public static void registerBlockRender() {
         //Ores
         registerBlock(MmaBlocks.copperOre);
+        registerBlock(MmaBlocks.laconianOre);
 
         //Blocks
         registerBlock(MmaBlocks.copperBlock);
