@@ -8,6 +8,7 @@ import rewbot.minecraft.tutorial.Main;
 import rewbot.minecraft.tutorial.items.armor.*;
 import rewbot.minecraft.tutorial.items.fuels.MmaTreeResing;
 import rewbot.minecraft.tutorial.items.fuels.MmaViscinousGel;
+import rewbot.minecraft.tutorial.items.ingots.MmaLaconianIngot;
 import rewbot.minecraft.tutorial.items.tools.*;
 
 /**
@@ -40,6 +41,7 @@ public class MmaItems {
 
     //Ingots
     public static Item copperIngot;
+    public static Item laconianIngot;
 
     //Gems
     public static Item topazStone;
@@ -68,6 +70,7 @@ public class MmaItems {
 
         //Ingots
         GameRegistry.registerItem(copperIngot = new MmaItem("copperIngot"), "copperIngot");
+        GameRegistry.registerItem(laconianIngot = new MmaLaconianIngot("laconianIngot"), "laconianIngot");
 
         //Gems
         GameRegistry.registerItem(topazStone = new MmaItem("topazStone"), "topazStone");

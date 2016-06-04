@@ -30,6 +30,7 @@ public class MmaItemRender {
 
         //Ingots
         registerItem(MmaItems.copperIngot);
+        registerItem(MmaItems.laconianIngot);
 
         //Gems
         registerItem(MmaItems.topazStone);

@@ -4,6 +4,7 @@ tile.copperBlock.name=Copper Block
 tile.laconianOre.name=Laconian Ore
 
 item.copperIngot.name=Copper Ingot
+item.laconianIngot.name=Laconian Ingot
 item.topazStone.name=Topaz Stone
 item.vanadiumPickaxe.name=Vanadium Pickaxe
 item.vanadiumAxe.name=Vanadium Axe
