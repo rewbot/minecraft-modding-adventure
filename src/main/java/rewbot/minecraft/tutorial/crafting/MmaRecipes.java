@@ -1,5 +1,6 @@
 package rewbot.minecraft.tutorial.crafting;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import rewbot.minecraft.tutorial.blocks.MmaBlocks;
@@ -11,6 +12,11 @@ import rewbot.minecraft.tutorial.items.MmaItems;
 public class MmaRecipes {
 
     public static void initRecipes() {
+        initCopperRecipes();
+        initLaconianRecipes();
+    }
+
+    private static void initCopperRecipes() {
         //addRecipe takes Java varargs as it's second argument. They let you pass any number of objects of a specific type, in this case object
         GameRegistry.addRecipe(new ItemStack(MmaBlocks.copperBlock),
                 "###",
@@ -22,5 +28,20 @@ public class MmaRecipes {
         GameRegistry.addShapelessRecipe(new ItemStack(MmaItems.copperIngot, 9),
                 MmaBlocks.copperBlock
         );
+    }
+
+    private static void initLaconianRecipes() {
+        //Shaped
+        //Sword
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianSword),
+                " L ",
+                " L ",
+                " W ",
+                'L', MmaItems.laconianIngot,
+                'W', Items.stick
+        );
+
+        //Shapeless
+        GameRegistry.addShapelessRecipe(new ItemStack(MmaBlocks.laconianOre, 64), Items.diamond);
     }
 }
