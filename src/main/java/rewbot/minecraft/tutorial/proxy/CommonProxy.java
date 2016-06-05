@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import rewbot.minecraft.tutorial.blocks.MmaBlocks;
 import rewbot.minecraft.tutorial.crafting.MmaRecipes;
 import rewbot.minecraft.tutorial.crafting.MmaSmelting;
+import rewbot.minecraft.tutorial.handler.MmaDemonOreDropHandler;
 import rewbot.minecraft.tutorial.handler.MmaDropHandler;
 import rewbot.minecraft.tutorial.handler.MmaFuelHandler;
 import rewbot.minecraft.tutorial.items.MmaItems;
@@ -27,6 +28,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent event) {
         MinecraftForge.EVENT_BUS.register(new MmaDropHandler());
+        MinecraftForge.EVENT_BUS.register(new MmaDemonOreDropHandler());
         GameRegistry.registerFuelHandler(new MmaFuelHandler());
         GameRegistry.registerWorldGenerator(new MmaWorldGen(), 0);
     }
