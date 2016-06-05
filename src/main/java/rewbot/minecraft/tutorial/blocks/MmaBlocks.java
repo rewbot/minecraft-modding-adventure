@@ -11,6 +11,7 @@ public class MmaBlocks {
     //Ores
     public static Block copperOre;
     public static Block laconianOre;
+    public static Block demonOre;
 
     //Blocks
     public static Block copperBlock;
@@ -22,6 +23,7 @@ public class MmaBlocks {
         //Ores
         GameRegistry.registerBlock(copperOre = new MmaBlock("copperOre", Material.rock, 3, 15), "copperOre");
         GameRegistry.registerBlock(laconianOre = new MmaLaconianOre("laconianOre", Material.rock, 3, 15), "laconianOre");
+        GameRegistry.registerBlock(demonOre = new MmaDemonOre("demonOre", Material.rock, 3, 15), "demonOre");
 
         //Blocks
         GameRegistry.registerBlock(copperBlock = new MmaBlock("copperBlock", Material.rock, 3, 15), "copperBlock");
