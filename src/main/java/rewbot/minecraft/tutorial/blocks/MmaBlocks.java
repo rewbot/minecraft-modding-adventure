@@ -11,7 +11,7 @@ public class MmaBlocks {
     //Ores
     public static Block copperOre;
     public static Block laconianOre;
-    public static Block demonOre;
+    public static MmaDemonOre demonOre;
 
     //Blocks
     public static Block copperBlock;

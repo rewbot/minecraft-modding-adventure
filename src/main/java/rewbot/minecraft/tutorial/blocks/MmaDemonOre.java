@@ -3,7 +3,7 @@ package rewbot.minecraft.tutorial.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.monster.EntityMob;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
@@ -11,15 +11,16 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import rewbot.minecraft.tutorial.MmaGlobal;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import java.util.Random;
 
 /**
  * Created by ashepherd on 6/4/2016.
  */
 public class MmaDemonOre extends Block {
+
+    private int dangerLevel = 0;
+
+    public int getDangerLevel() { return dangerLevel; }
 
     public MmaDemonOre(String unlocalizedName, Material material, float hardness, float resistance) {
         super(material);
@@ -30,6 +31,10 @@ public class MmaDemonOre extends Block {
         setHardness(hardness);
         setResistance(resistance);
         setCreativeTab(MmaGlobal.mmaCreativeTab);
+    }
+
+    public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {
+        dangerLevel++;
     }
 
     //Borrowed from BlockRedstoneOre.java
