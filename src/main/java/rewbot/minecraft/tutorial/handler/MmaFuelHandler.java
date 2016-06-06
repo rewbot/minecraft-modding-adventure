@@ -14,9 +14,6 @@ public class MmaFuelHandler implements IFuelHandler {
         if (fuel.getItem() == MmaItems.treeResin) {
             return 800;
         }
-        if (fuel.getItem() == MmaItems.viscinousGel) {
-            return 2400;
-        }
 
         return 0;
     }
