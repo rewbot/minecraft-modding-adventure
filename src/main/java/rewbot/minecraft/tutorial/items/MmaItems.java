@@ -43,7 +43,6 @@ public class MmaItems {
 
     //Fuels
     public static Item treeResin;
-    public static Item viscinousGel;
 
     public static void initItems() {
         //Tools
