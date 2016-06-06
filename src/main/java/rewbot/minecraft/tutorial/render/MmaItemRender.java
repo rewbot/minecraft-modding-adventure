@@ -19,8 +19,6 @@ public class MmaItemRender {
         registerItem(MmaItems.laconianSpade);
         registerItem(MmaItems.laconianHoe);
         registerItem(MmaItems.laconianSword);
-        registerItem(MmaItems.shaleMattock);
-        registerItem(MmaItems.resinHarvester);
 
         //Armor
         registerItem(MmaItems.laconianHelmet);
@@ -37,7 +35,6 @@ public class MmaItemRender {
 
         //Fuels
         registerItem(MmaItems.treeResin);
-        registerItem(MmaItems.viscinousGel);
     }
 
     private static void registerItem(Item item) {
