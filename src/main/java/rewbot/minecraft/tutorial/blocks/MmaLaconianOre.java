@@ -9,12 +9,12 @@ import rewbot.minecraft.tutorial.MmaGlobal;
  */
 public class MmaLaconianOre extends Block {
 
-    public MmaLaconianOre(String unlocalizedName, Material material, float hardness, float resistance) {
-        super(material);
+    public MmaLaconianOre(String unlocalizedName) {
+        super(Material.rock);
 
         setUnlocalizedName(unlocalizedName);
-        setHardness(hardness);
-        setResistance(resistance);
+        setHardness(3);
+        setResistance(15);
         setCreativeTab(MmaGlobal.mmaCreativeTab);
     }
 }

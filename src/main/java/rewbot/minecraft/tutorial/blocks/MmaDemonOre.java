@@ -19,14 +19,14 @@ public class MmaDemonOre extends Block {
 
     private int dangerLevel = 0;
 
-    public MmaDemonOre(String unlocalizedName, Material material, float hardness, float resistance) {
-        super(material);
+    public MmaDemonOre(String unlocalizedName) {
+        super(Material.rock);
 
         //Necessary for spawning particles
-        this.setTickRandomly(true);
+        setTickRandomly(true);
         setUnlocalizedName(unlocalizedName);
-        setHardness(hardness);
-        setResistance(resistance);
+        setHardness(3);
+        setResistance(15);
         setCreativeTab(MmaGlobal.mmaCreativeTab);
     }
 

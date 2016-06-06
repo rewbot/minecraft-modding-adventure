@@ -22,8 +22,8 @@ public class MmaBlocks {
     public static void initBlocks() {
         //Ores
         GameRegistry.registerBlock(copperOre = new MmaBlock("copperOre", Material.rock, 3, 15), "copperOre");
-        GameRegistry.registerBlock(laconianOre = new MmaLaconianOre("laconianOre", Material.rock, 3, 15), "laconianOre");
-        GameRegistry.registerBlock(demonOre = new MmaDemonOre("demonOre", Material.rock, 3, 15), "demonOre");
+        GameRegistry.registerBlock(laconianOre = new MmaLaconianOre("laconianOre"), "laconianOre");
+        GameRegistry.registerBlock(demonOre = new MmaDemonOre("demonOre"), "demonOre");
 
         //Blocks
         GameRegistry.registerBlock(copperBlock = new MmaBlock("copperBlock", Material.rock, 3, 15), "copperBlock");
