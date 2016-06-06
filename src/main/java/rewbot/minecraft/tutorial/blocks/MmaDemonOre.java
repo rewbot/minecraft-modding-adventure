@@ -3,7 +3,6 @@ package rewbot.minecraft.tutorial.blocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.world.World;
@@ -20,8 +19,6 @@ public class MmaDemonOre extends Block {
 
     private int dangerLevel = 0;
 
-    public int getDangerLevel() { return dangerLevel; }
-
     public MmaDemonOre(String unlocalizedName, Material material, float hardness, float resistance) {
         super(material);
 
@@ -33,8 +30,17 @@ public class MmaDemonOre extends Block {
         setCreativeTab(MmaGlobal.mmaCreativeTab);
     }
 
-    public void onBlockHarvested(World worldIn, BlockPos pos, IBlockState state, EntityPlayer player) {
-        dangerLevel++;
+    public int getDangerLevel() { return dangerLevel; }
+
+    public void increaseDangerLevel() { dangerLevel++; }
+
+    public void reduceDangerLevel() {
+        System.out.println("Danger Level before: " + dangerLevel);
+        if (dangerLevel != 0) {
+            dangerLevel--;
+            System.out.println("Danger Level after: " + dangerLevel);
+
+        }
     }
 
     //Borrowed from BlockRedstoneOre.java

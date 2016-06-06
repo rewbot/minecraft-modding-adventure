@@ -3,12 +3,14 @@ package rewbot.minecraft.tutorial.handler;
 
 import net.minecraft.entity.boss.EntityWither;
 import net.minecraft.entity.monster.*;
+import net.minecraft.entity.passive.EntityChicken;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import rewbot.minecraft.tutorial.blocks.MmaBlocks;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import rewbot.minecraft.tutorial.items.tools.MmaLaconianPickaxe;
 
 import java.util.Random;
 
@@ -21,8 +23,16 @@ public class MmaDemonOreDropHandler {
     public void addBlockDrop(BlockEvent.HarvestDropsEvent event) {
 
         if (event.state.getBlock() == MmaBlocks.demonOre) {
-            event.drops.clear();
-            onDropSpawnMonster(event.world, event.pos);
+            ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
+
+            if(holding != null && holding.getItem() instanceof MmaLaconianPickaxe) {
+                MmaBlocks.demonOre.reduceDangerLevel();
+                onDropSpawnFriendly(event.world, event.pos);
+            } else {
+                event.drops.clear();
+                MmaBlocks.demonOre.increaseDangerLevel();
+                onDropSpawnMonster(event.world, event.pos);
+            }
         }
     }
 
@@ -105,6 +115,8 @@ public class MmaDemonOreDropHandler {
     }
 
     public void onDropSpawnFriendly(World worldIn, BlockPos pos) {
-        throw new NotImplementedException();
+        EntityChicken chicken = new EntityChicken(worldIn);
+        chicken.setPosition(pos.getX(), pos.getY(), pos.getZ());
+        worldIn.spawnEntityInWorld(chicken);
     }
 }
