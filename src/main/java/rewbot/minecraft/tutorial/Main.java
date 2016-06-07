@@ -17,12 +17,12 @@ public class Main {
     public static final String MOD_NAME = "Minecraft Modding Adventure";
     public static final String MOD_VERSION = "0.0.0";
     public static final String CLIENT_PROXY = "rewbot.minecraft.tutorial.proxy.ClientProxy";
-    public static final String COMMON_PROXY = "rewbot.minecraft.tutorial.proxy.CommonProxy";
+    public static final String SERVER_PROXY = "rewbot.minecraft.tutorial.proxy.ServerProxy";
 
     @Mod.Instance(value = Main.MOD_ID)
     public static Main instance;
 
-    @SidedProxy(clientSide = CLIENT_PROXY, serverSide = COMMON_PROXY)
+    @SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)
     public static CommonProxy proxy;
 
     @Mod.EventHandler
