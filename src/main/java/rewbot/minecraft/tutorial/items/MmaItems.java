@@ -7,6 +7,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import rewbot.minecraft.tutorial.Main;
 import rewbot.minecraft.tutorial.items.armor.*;
 import rewbot.minecraft.tutorial.items.fuels.MmaTreeResin;
+import rewbot.minecraft.tutorial.items.gems.MmaTopazStone;
+import rewbot.minecraft.tutorial.items.ingots.MmaCopperIngot;
 import rewbot.minecraft.tutorial.items.ingots.MmaLaconianIngot;
 import rewbot.minecraft.tutorial.items.tools.*;
 
@@ -60,11 +62,11 @@ public class MmaItems {
 
 
         //Ingots
-        GameRegistry.registerItem(copperIngot = new MmaItem("copperIngot"), "copperIngot");
+        GameRegistry.registerItem(copperIngot = new MmaCopperIngot("copperIngot"), "copperIngot");
         GameRegistry.registerItem(laconianIngot = new MmaLaconianIngot("laconianIngot"), "laconianIngot");
 
         //Gems
-        GameRegistry.registerItem(topazStone = new MmaItem("topazStone"), "topazStone");
+        GameRegistry.registerItem(topazStone = new MmaTopazStone("topazStone"), "topazStone");
 
         //Fuels
         GameRegistry.registerItem(treeResin = new MmaTreeResin("treeResin"), "treeResin");

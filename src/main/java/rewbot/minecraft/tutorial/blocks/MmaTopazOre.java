@@ -10,11 +10,11 @@ import rewbot.minecraft.tutorial.items.MmaItems;
 import java.util.Random;
 
 /**
- * Created by ashepherd on 5/12/2016.
+ * Created by ashepherd on 6/7/2016.
  */
-public class MmaBlock extends Block {
+public class MmaTopazOre extends Block {
 
-    public MmaBlock(String unlocalizedName, Material material, float hardness, float resistance) {
+    public MmaTopazOre(String unlocalizedName, Material material, float hardness, float resistance) {
         super(material);
 
         this.setUnlocalizedName(unlocalizedName);
@@ -24,10 +24,11 @@ public class MmaBlock extends Block {
     }
 
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return this == MmaBlocks.topazOre ? MmaItems.topazStone : Item.getItemFromBlock(this);
+         return MmaItems.topazStone;
     }
 
     public int quantityDropped(Random rand) {
-        return this == MmaBlocks.topazOre ? 1 + rand.nextInt(5) : 1;
+
+        return rand.nextInt(5) + 1;
     }
 }

@@ -21,14 +21,14 @@ public class MmaBlocks {
 
     public static void initBlocks() {
         //Ores
-        GameRegistry.registerBlock(copperOre = new MmaBlock("copperOre", Material.rock, 3, 15), "copperOre");
+        GameRegistry.registerBlock(copperOre = new MmaCopperOre("copperOre", Material.rock, 3, 15), "copperOre");
         GameRegistry.registerBlock(laconianOre = new MmaLaconianOre("laconianOre"), "laconianOre");
         GameRegistry.registerBlock(demonOre = new MmaDemonOre("demonOre"), "demonOre");
 
         //Blocks
-        GameRegistry.registerBlock(copperBlock = new MmaBlock("copperBlock", Material.rock, 3, 15), "copperBlock");
+        GameRegistry.registerBlock(copperBlock = new MmaCopperBlock("copperBlock", Material.rock, 3, 15), "copperBlock");
 
         //Gems
-        GameRegistry.registerBlock(topazOre = new MmaBlock("topazOre", Material.rock, 3, 15), "topazOre");
+        GameRegistry.registerBlock(topazOre = new MmaTopazOre("topazOre", Material.rock, 3, 15), "topazOre");
     }
 }

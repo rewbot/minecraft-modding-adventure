@@ -1,14 +1,14 @@
-package rewbot.minecraft.tutorial.items;
+package rewbot.minecraft.tutorial.items.gems;
 
 import net.minecraft.item.Item;
 import rewbot.minecraft.tutorial.MmaGlobal;
 
 /**
- * Created by ashepherd on 5/17/2016.
+ * Created by ashepherd on 6/7/2016.
  */
-public class MmaItem extends Item {
+public class MmaTopazStone extends Item {
 
-    public MmaItem(String name) {
+    public MmaTopazStone(String name) {
         super();
 
         setUnlocalizedName(name);
