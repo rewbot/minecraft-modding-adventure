@@ -15,7 +15,6 @@ import java.util.Random;
 public class MmaWorldGen implements IWorldGenerator {
     //Ores
     private WorldGenerator copperOre;
-    private WorldGenerator laconianOre;
 
     //Gems
     private WorldGenerator topazOre;
@@ -23,7 +22,6 @@ public class MmaWorldGen implements IWorldGenerator {
     public MmaWorldGen() {
         copperOre = new MmaWorldGenMinable(MmaBlocks.copperOre.getDefaultState(), 8);
         topazOre = new MmaWorldGenMinable(MmaBlocks.topazOre.getDefaultState(), 8);
-        laconianOre = new MmaWorldGenMinable(MmaBlocks.laconianOre.getDefaultState(), 4);
     }
 
     @Override
@@ -32,7 +30,6 @@ public class MmaWorldGen implements IWorldGenerator {
             case 0: //Overworld
                 //Ores
                 runGenerator(copperOre, world, random, chunkX, chunkZ, 50, 0, 228);
-                runGenerator(laconianOre, world, random, chunkX, chunkZ, 10, 0, 64);
                 //Gems
                 runGenerator(topazOre, world, random, chunkX, chunkZ, 10, 0, 128);
                 break;

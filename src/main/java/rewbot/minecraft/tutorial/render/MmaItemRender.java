@@ -13,22 +13,8 @@ import rewbot.minecraft.tutorial.items.MmaItems;
 public class MmaItemRender {
 
     public static void registerItemRender() {
-        //Tools
-        registerItem(MmaItems.laconianPickaxe);
-        registerItem(MmaItems.laconianAxe);
-        registerItem(MmaItems.laconianSpade);
-        registerItem(MmaItems.laconianHoe);
-        registerItem(MmaItems.laconianSword);
-
-        //Armor
-        registerItem(MmaItems.laconianHelmet);
-        registerItem(MmaItems.laconianChestplate);
-        registerItem(MmaItems.laconianLeggings);
-        registerItem(MmaItems.laconianBoots);
-
         //Ingots
         registerItem(MmaItems.copperIngot);
-        registerItem(MmaItems.laconianIngot);
 
         //Gems
         registerItem(MmaItems.topazStone);

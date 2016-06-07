@@ -10,7 +10,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import rewbot.minecraft.tutorial.blocks.MmaBlocks;
-import rewbot.minecraft.tutorial.items.tools.MmaLaconianPickaxe;
 
 import java.util.Random;
 
@@ -21,19 +20,9 @@ public class MmaDemonOreDropHandler {
 
     @SubscribeEvent
     public void addBlockDrop(BlockEvent.HarvestDropsEvent event) {
-
-        if (event.state.getBlock() == MmaBlocks.demonOre) {
-            ItemStack holding = event.harvester.inventory.getStackInSlot(event.harvester.inventory.currentItem);
-
-            if(holding != null && holding.getItem() instanceof MmaLaconianPickaxe) {
-                MmaBlocks.demonOre.reduceDangerLevel();
-                onDropSpawnFriendly(event.world, event.pos);
-            } else {
-                event.drops.clear();
-                MmaBlocks.demonOre.increaseDangerLevel();
-                onDropSpawnMonster(event.world, event.pos);
-            }
-        }
+            event.drops.clear();
+            MmaBlocks.demonOre.increaseDangerLevel();
+            onDropSpawnMonster(event.world, event.pos);
     }
 
     private EntityMob generateMonster(World worldIn) {
@@ -112,11 +101,5 @@ public class MmaDemonOreDropHandler {
             monster.setPosition(pos.getX(), pos.getY(), pos.getZ());
             worldIn.spawnEntityInWorld(monster);
         }
-    }
-
-    public void onDropSpawnFriendly(World worldIn, BlockPos pos) {
-        EntityChicken chicken = new EntityChicken(worldIn);
-        chicken.setPosition(pos.getX(), pos.getY(), pos.getZ());
-        worldIn.spawnEntityInWorld(chicken);
     }
 }

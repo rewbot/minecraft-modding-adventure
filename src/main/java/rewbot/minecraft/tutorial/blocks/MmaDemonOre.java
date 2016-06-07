@@ -34,15 +34,6 @@ public class MmaDemonOre extends Block {
 
     public void increaseDangerLevel() { dangerLevel++; }
 
-    public void reduceDangerLevel() {
-        System.out.println("Danger Level before: " + dangerLevel);
-        if (dangerLevel != 0) {
-            dangerLevel--;
-            System.out.println("Danger Level after: " + dangerLevel);
-
-        }
-    }
-
     //Borrowed from BlockRedstoneOre.java
     @SideOnly(Side.CLIENT)
     public void randomDisplayTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
