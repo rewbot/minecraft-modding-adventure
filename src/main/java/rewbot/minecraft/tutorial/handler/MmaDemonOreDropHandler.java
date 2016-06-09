@@ -20,9 +20,11 @@ public class MmaDemonOreDropHandler {
 
     @SubscribeEvent
     public void addBlockDrop(BlockEvent.HarvestDropsEvent event) {
+        if (event.state.getBlock() == MmaBlocks.demonOre) {
             event.drops.clear();
             MmaBlocks.demonOre.increaseDangerLevel();
             onDropSpawnMonster(event.world, event.pos);
+        }
     }
 
     private EntityMob generateMonster(World worldIn) {
