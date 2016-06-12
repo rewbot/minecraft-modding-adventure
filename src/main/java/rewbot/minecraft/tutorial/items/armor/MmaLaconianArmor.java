@@ -27,22 +27,11 @@ public class MmaLaconianArmor extends ItemArmor {
         if (itemStack.getItem() == MmaItems.laconianHelmet) {
             effectPlayer(player, Potion.nightVision, 0);
         }
-        if (itemStack.getItem() == MmaItems.laconianChestplate) {
-            effectPlayer(player, Potion.absorption, 1);
-        }
-        if (itemStack.getItem() == MmaItems.laconianLeggings) {
-            effectPlayer(player, Potion.moveSpeed, 1);
-        }
-        if (itemStack.getItem() == MmaItems.laconianBoots) {
-            effectPlayer(player, Potion.jump, 2);
-        }
+
 
         if (isWearingFullSet(player, MmaItems.laconianHelmet, MmaItems.laconianChestplate, MmaItems.laconianLeggings, MmaItems.laconianBoots)) {
-            effectPlayer(player, Potion.regeneration, 1);
+            effectPlayer(player, Potion.absorption, 1);
         }
-
-        //TODO: How can I add the custom items directly to survival inventory?
-        //player.inventory.addItemStackToInventory(new ItemStack(MmaItems.copperIngot));
     }
 
     private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots) {
