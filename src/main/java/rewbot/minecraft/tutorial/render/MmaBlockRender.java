@@ -15,14 +15,7 @@ public class MmaBlockRender {
 
     public static void registerBlockRender() {
         //Ores
-        registerBlock(MmaBlocks.copperOre);
         registerBlock(MmaBlocks.demonOre);
-
-        //Blocks
-        registerBlock(MmaBlocks.copperBlock);
-
-        //Gems
-        registerBlock(MmaBlocks.topazOre);
     }
 
     private static void registerBlock(Block block) {

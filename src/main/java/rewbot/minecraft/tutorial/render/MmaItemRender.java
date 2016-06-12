@@ -6,6 +6,7 @@ import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import rewbot.minecraft.tutorial.Main;
 import rewbot.minecraft.tutorial.items.MmaItems;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * Created by ashepherd on 5/17/2016.
@@ -13,14 +14,8 @@ import rewbot.minecraft.tutorial.items.MmaItems;
 public class MmaItemRender {
 
     public static void registerItemRender() {
-        //Ingots
-        registerItem(MmaItems.copperIngot);
-
-        //Gems
-        registerItem(MmaItems.topazStone);
-
-        //Fuels
-        registerItem(MmaItems.treeResin);
+        //Register Items
+        throw new NotImplementedException();
     }
 
     private static void registerItem(Item item) {

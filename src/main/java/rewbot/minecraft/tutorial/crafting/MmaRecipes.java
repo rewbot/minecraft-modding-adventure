@@ -1,10 +1,6 @@
 package rewbot.minecraft.tutorial.crafting;
 
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-import rewbot.minecraft.tutorial.blocks.MmaBlocks;
-import rewbot.minecraft.tutorial.items.MmaItems;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * Created by ashepherd on 5/22/2016.
@@ -12,20 +8,42 @@ import rewbot.minecraft.tutorial.items.MmaItems;
 public class MmaRecipes {
 
     public static void initRecipes() {
-        initCopperRecipes();
+        initLaconianRecipes();
     }
 
-    private static void initCopperRecipes() {
-        //addRecipe takes Java varargs as it's second argument. They let you pass any number of objects of a specific type, in this case object
-        GameRegistry.addRecipe(new ItemStack(MmaBlocks.copperBlock),
-                "###",
-                "###",
-                "###",
-                '#', MmaItems.copperIngot
-        );
+    private static void initLaconianRecipes() {
+        throw new NotImplementedException();
 
-        GameRegistry.addShapelessRecipe(new ItemStack(MmaItems.copperIngot, 9),
-                MmaBlocks.copperBlock
-        );
+//        //Helmet
+//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHelmet),
+//                "###",
+//                "# #",
+//                "   ",
+//                '#', MmaItems.laconianIngot
+//        );
+//
+//        //Chestplate
+//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianChestplate),
+//                "# #",
+//                "###",
+//                "###",
+//                '#', MmaItems.laconianIngot
+//        );
+//
+//        //Leggings
+//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianLeggings),
+//                "###",
+//                "# #",
+//                "# #",
+//                '#', MmaItems.laconianIngot
+//        );
+//
+//        //Boots
+//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianBoots),
+//                "   ",
+//                "# #",
+//                "# #",
+//                '#', MmaItems.laconianIngot
+//        );
     }
 }

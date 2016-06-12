@@ -1,12 +1,7 @@
-tile.copperOre.name=Copper Ore
-tile.topazOre.name=Topaz Ore
-tile.copperBlock.name=Copper Block
 tile.laconianOre.name=Laconian Ore
 tile.demonOre.name=Demon Ore
 
-item.copperIngot.name=Copper Ingot
 item.laconianIngot.name=Laconian Ingot
-item.topazStone.name=Topaz Stone
 item.laconianPickaxe.name=Laconian Pickaxe
 item.laconianAxe.name=Laconian Axe
 item.laconianSpade.name=Laconian Shovel

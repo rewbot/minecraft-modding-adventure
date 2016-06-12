@@ -22,12 +22,13 @@ public class MmaDemonOre extends Block {
     public MmaDemonOre(String unlocalizedName) {
         super(Material.rock);
 
-        //Necessary for spawning particles
-        setTickRandomly(true);
         setUnlocalizedName(unlocalizedName);
         setHardness(3);
         setResistance(15);
         setCreativeTab(MmaGlobal.mmaCreativeTab);
+
+        //For spawning particles
+        setTickRandomly(true);
     }
 
     public int getDangerLevel() { return dangerLevel; }

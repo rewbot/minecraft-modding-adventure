@@ -1,6 +1,7 @@
 package rewbot.minecraft.tutorial;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import rewbot.minecraft.tutorial.items.MmaItems;
 
@@ -15,6 +16,6 @@ public class MmaCreativeTab extends CreativeTabs {
 
     @Override
     public Item getTabIconItem() {
-        return MmaItems.copperIngot;
+        return Items.blaze_rod;
     }
 }
