@@ -18,7 +18,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent preEvent) {
         MmaBlocks.initBlocks();
         //MmaItems.initItems();
-        //MmaRecipes.initRecipes();
+        MmaRecipes.initRecipes();
         //MmaSmelting.initSmelting();
     }
 

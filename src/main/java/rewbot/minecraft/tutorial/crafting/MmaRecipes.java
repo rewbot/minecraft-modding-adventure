@@ -1,5 +1,9 @@
 package rewbot.minecraft.tutorial.crafting;
 
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import rewbot.minecraft.tutorial.blocks.MmaBlocks;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
@@ -12,7 +16,8 @@ public class MmaRecipes {
     }
 
     private static void initLaconianRecipes() {
-        throw new NotImplementedException();
+        //Shapeless
+        GameRegistry.addShapelessRecipe(new ItemStack(MmaBlocks.laconianOre, 64), Items.diamond);
 
 //        //Helmet
 //        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHelmet),

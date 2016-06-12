@@ -16,6 +16,7 @@ public class MmaBlockRender {
     public static void registerBlockRender() {
         //Ores
         registerBlock(MmaBlocks.demonOre);
+        registerBlock(MmaBlocks.laconianOre);
     }
 
     private static void registerBlock(Block block) {
