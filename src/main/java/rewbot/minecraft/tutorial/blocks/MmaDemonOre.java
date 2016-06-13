@@ -35,6 +35,13 @@ public class MmaDemonOre extends Block {
 
     public void increaseDangerLevel() { dangerLevel++; }
 
+    public void reduceDangerLevel() {
+        if (dangerLevel != 0) {
+            dangerLevel--;
+
+        }
+    }
+
     //Borrowed from BlockRedstoneOre.java
     @SideOnly(Side.CLIENT)
     public void randomDisplayTick(World worldIn, BlockPos pos, IBlockState state, Random rand)
@@ -89,4 +96,5 @@ public class MmaDemonOre extends Block {
             }
         }
     }
+
 }
