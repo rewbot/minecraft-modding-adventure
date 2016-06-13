@@ -29,37 +29,45 @@ public class MmaRecipes {
                 '#', Items.stick
         );
 
+        //Sword
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianSword),
+                " * ",
+                " * ",
+                " # ",
+                '*', MmaItems.laconianIngot,
+                '#', Items.stick
+        );
 
-//        //Helmet
-//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHelmet),
-//                "###",
-//                "# #",
-//                "   ",
-//                '#', MmaItems.laconianIngot
-//        );
-//
-//        //Chestplate
-//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianChestplate),
-//                "# #",
-//                "###",
-//                "###",
-//                '#', MmaItems.laconianIngot
-//        );
-//
-//        //Leggings
-//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianLeggings),
-//                "###",
-//                "# #",
-//                "# #",
-//                '#', MmaItems.laconianIngot
-//        );
-//
-//        //Boots
-//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianBoots),
-//                "   ",
-//                "# #",
-//                "# #",
-//                '#', MmaItems.laconianIngot
-//        );
+        //Helmet
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHelmet),
+                "###",
+                "# #",
+                "   ",
+                '#', MmaItems.laconianIngot
+        );
+
+        //Chestplate
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianChestplate),
+                "# #",
+                "###",
+                "###",
+                '#', MmaItems.laconianIngot
+        );
+
+        //Leggings
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianLeggings),
+                "###",
+                "# #",
+                "# #",
+                '#', MmaItems.laconianIngot
+        );
+
+        //Boots
+        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianBoots),
+                "   ",
+                "# #",
+                "# #",
+                '#', MmaItems.laconianIngot
+        );
     }
 }

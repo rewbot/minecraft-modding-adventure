@@ -19,6 +19,14 @@ public class MmaItemRender {
 
         //Tools
         registerItem(MmaItems.laconianPickaxe);
+        registerItem(MmaItems.laconianSword);
+
+        //Armor
+        registerItem(MmaItems.laconianHelmet);
+        registerItem(MmaItems.laconianChestplate);
+        registerItem(MmaItems.laconianLeggings);
+        registerItem(MmaItems.laconianBoots);
+
     }
 
     private static void registerItem(Item item) {
