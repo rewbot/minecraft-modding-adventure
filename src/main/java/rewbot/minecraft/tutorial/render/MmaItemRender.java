@@ -14,8 +14,11 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class MmaItemRender {
 
     public static void registerItemRender() {
-        //Register Items
-        throw new NotImplementedException();
+        //Ingots
+        registerItem(MmaItems.laconianIngot);
+
+        //Tools
+        registerItem(MmaItems.laconianPickaxe);
     }
 
     private static void registerItem(Item item) {

@@ -1,6 +1,9 @@
 package rewbot.minecraft.tutorial.crafting;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import rewbot.minecraft.tutorial.blocks.MmaBlocks;
+import rewbot.minecraft.tutorial.items.MmaItems;
 
 /**
  * Created by ashepherd on 5/22/2016.
@@ -8,6 +11,6 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class MmaSmelting {
 
     public static void initSmelting() {
-        throw new NotImplementedException();
+        GameRegistry.addSmelting(MmaBlocks.laconianOre, new ItemStack(MmaItems.laconianIngot), 5);
     }
 }

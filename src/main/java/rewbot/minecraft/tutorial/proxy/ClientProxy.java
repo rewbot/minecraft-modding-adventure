@@ -19,7 +19,7 @@ public class ClientProxy extends CommonProxy {
     public void init(FMLInitializationEvent event) {
         super.init(event);
         MmaBlockRender.registerBlockRender();
-        //MmaItemRender.registerItemRender();
+        MmaItemRender.registerItemRender();
     }
 
     public void postInit(FMLPostInitializationEvent postEvent) {

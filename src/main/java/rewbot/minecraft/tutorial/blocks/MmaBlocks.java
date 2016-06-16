@@ -10,9 +10,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class MmaBlocks {
     //Ores
     public static MmaDemonOre demonOre;
+    public static Block laconianOre;
 
     public static void initBlocks() {
         //Ores
         GameRegistry.registerBlock(demonOre = new MmaDemonOre("demonOre"), "demonOre");
+        GameRegistry.registerBlock(laconianOre = new MmaLaconianOre("laconianOre"), "laconianOre");
     }
 }
