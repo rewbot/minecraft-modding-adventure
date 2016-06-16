@@ -4,6 +4,7 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import rewbot.minecraft.tutorial.blocks.MmaBlocks;
+import rewbot.minecraft.tutorial.items.MmaItems;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
@@ -19,6 +20,15 @@ public class MmaRecipes {
         //Shapeless
         GameRegistry.addShapelessRecipe(new ItemStack(MmaBlocks.laconianOre, 64), Items.diamond);
 
+//        //Sword
+//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianSword),
+//                " * ",
+//                " * ",
+//                " # ",
+//                '*', MmaItems.laconianIngot,
+//                '#', Items.stick
+//        );
+//
 //        //Helmet
 //        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHelmet),
 //                "###",
