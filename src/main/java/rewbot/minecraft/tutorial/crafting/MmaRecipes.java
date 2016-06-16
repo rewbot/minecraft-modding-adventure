@@ -29,7 +29,15 @@ public class MmaRecipes {
                 '#', Items.stick
         );
 
-
+//        //Sword
+//        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianSword),
+//                " * ",
+//                " * ",
+//                " # ",
+//                '*', MmaItems.laconianIngot,
+//                '#', Items.stick
+//        );
+//
 //        //Helmet
 //        GameRegistry.addRecipe(new ItemStack(MmaItems.laconianHelmet),
 //                "###",
