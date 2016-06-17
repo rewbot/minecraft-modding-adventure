@@ -40,9 +40,9 @@ public class MmaWorldGen implements IWorldGenerator {
 
         int heightDiff = maxHeight - minHeight + 1;
         for (int i = 0; i < chanceToSpawn; i++) {
-            int x = chunkX * 16 + rand.nextInt(16);
+            int x = chunkX + rand.nextInt(16);
             int y = minHeight + rand.nextInt(heightDiff);
-            int z = chunkZ * 16 + rand.nextInt(16);
+            int z = chunkZ + rand.nextInt(16);
             generator.generate(world, rand, new BlockPos(x, y, z));
         }
     }
